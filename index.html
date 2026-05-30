@@ -22,27 +22,11 @@
     <nav>
 
         <button onclick="showSection('home')">
-            Home
+        Home
         </button>
 
-        <button onclick="window.open('pdf/tugas1.pdf.pdf','_blank')">
-            Tugas 1
-        </button>
-
-        <button onclick="window.open('pdf/tugas2.pdf.pdf','_blank')">
-            Tugas 2
-        </button>
-
-        <button onclick="window.open('pdf/tugas3.pdf.pdf','_blank')">
-            Tugas 3
-        </button>
-
-        <button onclick="showSection('menu-studi-kasus')">
-            Studi Kasus
-        </button>
-
-        <button onclick="showSection('menu-perulangan')">
-            Perulangan
+        <button onclick="showSection('menu-tugas')">
+        Tugas
         </button>
 
     </nav>
@@ -57,76 +41,100 @@
 
             <div class="hero">
 
-                <h1>Algoritma Pemograman</h1>
+                <h1>Selamat Datang</h1>
 
                 <p class="about-web">
-                Website ini dibuat sebagai media dokumentasi dan pengumpulan tugas
-                mata kuliah Algoritma Pemrograman. Seluruh tugas disusun dalam bentuk
-                website agar mudah diakses dan dipelajari kembali.
+                    Website ini berisi kumpulan tugas mata kuliah Algoritma Pemrograman
+                    yang dikerjakan selama satu semester menggunakan bahasa Python.
                 </p>
 
                 <br>
 
-                <p><b>Nama :</b> Raffael Augustian Fathir</p>
-                <p><b>NIM :</b> 250403010001</p>
-                <p><b>Prodi :</b> Teknik Informatika</p>
+                <div class="profile-box">
 
-                <br><br>
+                    <h3>Raffael Augustian Fathir</h3>
 
-            <!-- MENU CARD -->
-            <div class="menu-card-container">
+                    <p>NIM : 250403010001</p>
 
-                <!-- TUGAS 1 -->
-                <div class="menu-card"
-                    onclick="window.open('pdf/tugas1.pdf','_blank')">
-
-                    <h2>Tugas 1</h2>
-
-                    <p>
-                        Contoh Algoritma Pemrograman dalam Kehidupan Sehari-hari.
-                    </p>
+                    <p>Program Studi Teknik Informatika</p>
 
                 </div>
 
-                <!-- TUGAS 2 -->
-                <div class="menu-card"
-                    onclick="window.open('pdf/tugas2.pdf','_blank')">
+                <br>
 
-                    <h2>Tugas 2</h2>
+                <button onclick="showSection('menu-tugas')">
+                    Lihat Daftar Tugas
+                </button>
+    
+            </div>
+        </section>
 
-                    <p>
-                        Post Test Tipe Data Primitif dan Non-Primitif.
-                    </p>
+         <!-- MENU TUGAS -->
+        <section id="menu-tugas" class="section">
 
-                </div>
+            <div class="card">
 
-                <!-- TUGAS 3 -->
-                <div class="menu-card"
-                    onclick="window.open('pdf/tugas3.pdf','_blank')">
+                <h1>Daftar Tugas</h1>
 
-                    <h2>Tugas 3</h2>
+                <p>
+                    Pilih tugas yang ingin dilihat.
+                </p>
 
-                    <p>
-                        Instruksi Algoritma Pemrograman.
-                    </p>
+                <br>
 
-                </div>
+                <div class="menu-card-container">
 
-                <!-- STUDI KASUS -->
-                <div class="menu-card"
-                    onclick="showSection('menu-studi-kasus')">
+            <!-- TUGAS 1 -->
+            <div class="menu-card"
+                onclick="window.open('pdf/tugas1.pdf','_blank')">
 
-                    <h2>Studi Kasus</h2>
+                <h2>Tugas 1</h2>
 
-                    <p>
-                        Program Menghitung Umur Menggunakan Python.
-                    </p>
+                <p>
+                    Contoh Algoritma Pemrograman dalam Kehidupan Sehari-hari.
+                </p>
 
-                </div>
+            </div>
 
-                <!-- PERULANGAN -->
-                <div class="menu-card"
-                    onclick="showSection('menu-perulangan')">
+            <!-- TUGAS 2 -->
+            <div class="menu-card"
+                onclick="window.open('pdf/tugas2.pdf','_blank')">
+
+                <h2>Tugas 2</h2>
+
+                <p>
+                    Post Test Tipe Data Primitif dan Non-Primitif.
+                </p>
+
+            </div>
+
+            <!-- TUGAS 3 -->
+            <div class="menu-card"
+                onclick="window.open('pdf/tugas3.pdf','_blank')">
+
+                <h2>Tugas 3</h2>
+
+                <p>
+                    Instruksi Algoritma Pemrograman.
+                </p>
+
+            </div>
+
+            <!-- STUDI KASUS -->
+            <div class="menu-card"
+                onclick="showSection('menu-studi-kasus')">
+
+                <h2>Studi Kasus</h2>
+
+                <p>
+                    Program Menghitung Umur Menggunakan Python.
+                </p>
+
+            </div>
+
+            <!-- PERULANGAN -->
+            <div class="menu-card"
+                onclick="showSection('menu-perulangan')">
 
                     <h2>Tugas Perulangan</h2>
 
@@ -134,10 +142,18 @@
                         FOR, WHILE, DO-WHILE, dan Nested Loop.
                     </p>
 
+                    </div>
+
                 </div>
 
+                <br>
+
+                <button onclick="showSection('home')">
+                    Kembali ke Home
+                </button>
+
             </div>
-        
+
         </section>
 
             <!-- MENU STUDI KASUS -->
@@ -179,8 +195,8 @@
 
                 <br><br>
 
-                <button onclick="showSection('home')">
-                Kembali ke Home
+                <button onclick="showSection('menu-tugas')">
+                Kembali ke Daftar Tugas
                 </button>
 
             </div>
@@ -218,8 +234,8 @@
 
         <br><br>
 
-        <button onclick="showSection('home')">
-            Kembali ke Home
+        <button onclick="showSection('menu-tugas')">
+        Kembali ke Daftar Tugas
         </button>
 
     </div>
